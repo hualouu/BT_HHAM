@@ -10,12 +10,10 @@
 <body>
     <script>
         function isPrime(number) {
-            // Nếu số nhập vào nhỏ hơn 2, không phải số nguyên tố
             if (number < 2) {
                 return false;
             }
 
-            // Kiểm tra xem số có phải là số nguyên tố hay không
             for (let i = 2; i <= Math.sqrt(number); i++) {
                 if (number % i === 0) {
                     return false;
